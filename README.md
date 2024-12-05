@@ -4,6 +4,10 @@ This project is a Vue.js application designed to display bus lines, stops, and t
 
 ---
 
+## Preview 
+![demo](https://github.com/user-attachments/assets/a60250fc-1a2f-4818-822f-e0c0986e7d67)
+
+
 ## **Features**
 - View a list of bus lines and their stops.
 - Search for bus stops by name.
