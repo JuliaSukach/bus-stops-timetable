@@ -28,8 +28,8 @@ This project is a Vue.js application designed to display bus lines, stops, and t
 ### **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/JuliaSukach/bus-stops-timetable.git
+   cd bus-stops-timetable
 
 2. Install dependencies:
     ```bash
