@@ -3,7 +3,7 @@
 This project is a Vue.js application designed to display bus lines, stops, and their respective schedules. It provides a user-friendly interface for navigating bus lines, viewing stops, and checking timetable details with built-in search and sorting functionality.
 
 ## Preview 
-![demo](https://github.com/user-attachments/assets/a60250fc-1a2f-4818-822f-e0c0986e7d67)
+![demo](https://github.com/user-attachments/assets/402f36e3-893b-4ae8-a740-0387e9cba994)
 
 
 ## **Features**
