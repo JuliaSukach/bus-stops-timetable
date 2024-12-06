@@ -1,2 +1,228 @@
 /* src/assets/styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+/* Root Variables for Consistent Theming */
+:root {
+    --color-primary: #9A9DA4;
+    --color-secondary: #63666E;
+    --color-background: #fff;
+    --color-border: #ddd;
+    --color-error: red;
+    --font-family-base: 'Inter', sans-serif;
+    --spacing-unit: 8px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Input Styles */
+.input {
+    padding: var(--spacing-unit);
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+/* Placeholder Container Styles */
+.placeholder {
+    border: 2px dashed var(--color-border);
+    padding: var(--spacing-unit);
+    color: var(--color-secondary);
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Error Styles */
+.error {
+    color: var(--color-error);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: var(--spacing-unit);
+}
+
+html {
+    background-color: #f3f4fa;
+}
+
+#app {
+    background-color: #f3f4fa;
+}
+
+#container {
+    padding: 40px 32px 0px 32px;
+    background-color: #f3f4fa;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.bus-stop-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+    margin: 24px 0px 24px 24px;
+}
+.bus-stops-wrap {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.bus-stops-wrap ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.bus-stops-wrap li {
+    padding: 20px 0px 20px 24px;
+    border-bottom: 1px dotted #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.bus-stops-wrap li:hover {
+    background-color: #F8F8FB;
+}
+.sort-button {
+    margin-left: 4px;
+    cursor: pointer;
+    border: 1px solid #63666E;
+    background: none;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.stops {
+    cursor: pointer;
+    overflow-y: auto;
+}
+.empty-time-lines {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+.empty-time-lines {
+    margin-left: 8px;
+}
+
+.empty-container {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%239A9DA4FF' stroke-width='5' stroke-dasharray='21' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #63666E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.bus-line-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+    padding: 24px 24px 0px 24px;
+}
+
+.bus-stop-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+    margin: 24px 0px 24px 24px;
+}
+.bus-stops, .bus-time{
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.bus-stops {
+    margin-right: 8px;
+}
+
+li:first-child {
+    border-top: 1px dotted #ddd;
+}
+.sort-button {
+    margin-left: 4px;
+    cursor: pointer;
+    border: 1px solid #63666E;
+    background: none;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.stops {
+    cursor: pointer;
+    overflow-y: auto;
+}
+.empty-time-lines {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+.empty-time-lines {
+    margin-left: 8px;
+}
+
